@@ -2,7 +2,7 @@
 
 A real-time emergency alert dashboard for Alexandria, VA that integrates live data from NOAA/NWS, USGS, Dominion Energy, and other OSINT (Reddit, Twitter, etc.) to provide street-level situational awareness for emergency managers and residents.
 
-🚀  Features
+## 🚀 Features
 
 Live NOAA/NWS Alerts
 Pulls active weather alerts (flood, storm, coastal, etc.) from the NWS API
@@ -23,7 +23,8 @@ Navy blue theme, urgency badges, time/location stamps, and icons for provenance.
 Extensible
 Planned integrations for Dominion Energy power outages, 911 dispatch, and social signal monitoring (Reddit/Twitter).
 
-🖥️ Tech Stack
+
+## 🖥️ Tech Stack
 
 Frontend:
 
@@ -37,7 +38,7 @@ Backend (optional):
 
 Python (Flask or FastAPI) can be used as a proxy to fetch NOAA/NWS alerts (avoids CORS issues).
 
-📡 Data Sources
+## 📡 Data Sources
 
 NOAA/NWS Alerts API – api.weather.gov/alerts
 
@@ -51,7 +52,7 @@ Dominion Energy Outage Map (ArcGIS REST) – localized power outages with ETAs
 
 Social Signals – Reddit, Twitter for protest/civil unrest detection
 
-⚙️ Installation
+## ⚙️ Installation
 
 Clone this repository:
 
@@ -74,17 +75,14 @@ Expose endpoint /api/alerts
 
 Update fetchAlerts() in the JavaScript to point to your backend instead of directly to NOAA.
 
-🔄 Auto-Refresh
+## 🔄 Auto-Refresh
 
 The dashboard automatically updates every 30 seconds.
 Change this interval in the JS code:
 
 this.refreshInterval = 30000; // 30s
 
-📸 Screenshots
-Active NOAA Alert
-
-📌 Roadmap
+## 📌 Roadmap
 
  Integrate Dominion Energy outage polygons
 
@@ -96,7 +94,7 @@ Active NOAA Alert
 
  Add user accounts + persistence for relevance feedback
 
-🛡️ Disclaimer
+## 🛡️ Disclaimer
 
 This project is for educational and civic technology demonstration purposes only.
 Data is pulled from public APIs (NOAA, USGS, Dominion Energy).
